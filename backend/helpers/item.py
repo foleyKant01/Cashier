@@ -50,7 +50,8 @@ def ReadAllItem():
             for item in readAllItem:
                 item_infos = {
                     'it_uid': item.it_uid,
-                    'name': item.ar_name,
+                    'name': item.it_name,
+                    'price': item.it_price,
                 }
                 item_informations.append(item_infos)
 
@@ -136,6 +137,62 @@ def DeleteItem():
         else:
             reponse['status'] = 'error'
             reponse['motif'] = 'Item not found'
+
+    except Exception as e:
+        reponse['error_description'] = str(e)
+        reponse['status'] = 'error'
+
+    return reponse
+
+
+def SearchItem(code):
+    reponse = {}
+
+    try:
+        readSingleItem = Item.query.filter_by(it_codebarre=code).first()
+
+        if readSingleItem:
+            item_infos = {
+                'name': readSingleItem.it_name,
+                'price': readSingleItem.it_price,
+                'codebarre': readSingleItem.it_codebarre,
+                'it_uid': readSingleItem.it_uid,
+            }
+        reponse['status'] = 'Succes'
+        reponse['item'] = item_infos
+
+    except Exception as e:
+        reponse['error_description'] = str(e)
+        reponse['status'] = 'error'
+
+    return reponse
+
+
+
+def BuyForm():
+    reponse = {}
+    items = []
+
+    try:
+        code = request.json.get('codebarre')
+        if code:
+            result = SearchItem(code)
+            items.append(result['item'])
+
+        formbuying = items
+        bu_uid = str(uuid.uuid4())
+        
+        new_buyform = Formbuying()
+        new_buyform.formbuying = formbuying
+        new_buyform.bu_uid = bu_uid
+        
+        db.session.add(new_buyform)
+        db.session.commit()
+
+        # nouvel_hotel =(reponse)
+        # liste_users.append(nouvel_hotel)
+
+        reponse['status'] = 'Succes'
 
     except Exception as e:
         reponse['error_description'] = str(e)
