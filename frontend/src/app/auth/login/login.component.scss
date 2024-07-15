@@ -102,3 +102,28 @@ label,
 input, ::placeholder{
   color: #0d456c;
 }
+
+
+.decorative-dots::before,
+.decorative-dots::after  {
+  content: '...';
+  color: #cdd6c1;
+  // color: #e8e8e8;
+  // color: #5e6266;
+  font-size: 30px;
+  // display: block;
+  // text-align: center;
+  line-height: 1;
+    // margin-top: 2px;
+}
+
+
+// .decorative-dots::before,
+// .decorative-dots::after {
+//   color: #; /* Couleur grise */
+// }
+
+// .decorative-dots::before,
+// .decorative-dots::after {
+//   color: #e8e8e8; /* Gris clair */
+// }
