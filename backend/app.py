@@ -7,7 +7,6 @@ from config.constant import *
 from model.tt import *
 from resources.admin import AdminApi
 from resources.user import UserApi
-from backend.resources.user import ProductsApi
 from flask_migrate import Migrate
 from flask import Flask
 from flask_cors import CORS
