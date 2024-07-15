@@ -40,9 +40,9 @@ def home():
     print('Trouvez Tous Officiel')
     return render_template('index.html')
 
-api.add_resource(AdminApi, '/api/admin/<string:route>', endpoint='all_user', methods=['GET', 'POST', 'DELETE', 'PATCH'])
-api.add_resource(UserApi, '/api/user/<string:route>', endpoint='all_products', methods=['GET', 'POST', 'DELETE', 'PATCH'])
-api.add_resource(ItemApi, '/api/item/<string:route>', endpoint='all_products', methods=['GET', 'POST', 'DELETE', 'PATCH'])
+api.add_resource(AdminApi, '/api/admin/<string:route>', endpoint='all_admin', methods=['GET', 'POST', 'DELETE', 'PATCH'])
+api.add_resource(UserApi, '/api/user/<string:route>', endpoint='all_user', methods=['GET', 'POST', 'DELETE', 'PATCH'])
+api.add_resource(ItemApi, '/api/item/<string:route>', endpoint='all_item', methods=['GET', 'POST', 'DELETE', 'PATCH'])
 
 if __name__ == '__main__':
     app.run(debug=False,  host="0.0.0.0")  
