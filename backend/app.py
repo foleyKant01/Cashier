@@ -7,6 +7,7 @@ from config.constant import *
 from model.tt import *
 from resources.admin import AdminApi
 from resources.user import UserApi
+from resources.item import ItemApi
 from flask_migrate import Migrate
 from flask import Flask
 from flask_cors import CORS
@@ -41,6 +42,7 @@ def home():
 
 api.add_resource(AdminApi, '/api/admin/<string:route>', endpoint='all_user', methods=['GET', 'POST', 'DELETE', 'PATCH'])
 api.add_resource(UserApi, '/api/user/<string:route>', endpoint='all_products', methods=['GET', 'POST', 'DELETE', 'PATCH'])
+api.add_resource(ItemApi, '/api/item/<string:route>', endpoint='all_products', methods=['GET', 'POST', 'DELETE', 'PATCH'])
 
 if __name__ == '__main__':
     app.run(debug=False,  host="0.0.0.0")  
