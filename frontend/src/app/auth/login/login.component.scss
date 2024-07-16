@@ -9,34 +9,38 @@
 }
 
 body {
-  // background-color: #0d456c;
-  background-color: #0d456c !important;
+  background-color: #0d456c;
   // background-color: #f2f2f2;
   // background-color: #607d8b;
   // background-color: #34495e;
   // background-color: #556b2f;
-  min-height: 90vh;
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
-  font-weight: 100;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100px;
   overflow-x: hidden;
 }
 
 .container {
-  margin-top: 85px;
+  position: relative;
   justify-content: center;
   align-items: center;
-  display: flex;
-  width: auto;
-  height: 75vh   ;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .card {
+  display: flex;
   border: 2px solid #fff;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #0d456c;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  // height: 75vh;
+  margin-top: 156px;
 }
 
 .card-body {
@@ -103,6 +107,7 @@ input, ::placeholder{
   color: #0d456c;
 }
 
+/* Cashier */
 
 .decorative-dots::before,
 .decorative-dots::after  {
