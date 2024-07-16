@@ -21,7 +21,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 100px;
+  // font-weight: normal;
+  font-weight: 400;
   overflow-x: hidden;
 }
 
@@ -38,6 +39,10 @@ body {
   border: 2px solid #fff;
   border-radius: 30px;
   background-color: #0d456c;
+  // background-color: #f2f2f2;
+  // background-color: #607d8b;
+  // background-color: #34495e;
+  // background-color: #556b2f;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   // height: 75vh;
   margin-top: 156px;
@@ -47,6 +52,41 @@ body {
   padding: 30px;
   // text-align: center; 
 }
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  // background-color: #fff;
+  background-color: var(--shape-color, #fff);
+  border-radius: 50%;
+  transform: rotate(45deg);
+  animation: moveShape 4s infinite linear;
+}
+
+// .card::before {
+//   top: -15px;
+//   left: 20%;
+// }
+
+// .card::after {
+//   bottom: -15px;
+//   right: 20%;
+// }
+
+// @keyframes moveShape {
+//   0% {
+//     transform: rotate(45deg) translateX(0) translateY(0);
+//   }
+//   50% {
+//     transform: rotate(45deg) translateX(80px); /* Déplacement horizontal */
+//   }
+//   100% {
+//     transform: rotate(45deg) translateX(0);
+//   }
+// }
 
 .form-group {
   margin-bottom: 20px;
