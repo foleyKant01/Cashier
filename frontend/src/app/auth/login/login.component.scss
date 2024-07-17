@@ -50,21 +50,21 @@ body {
 
 .card-body {
   padding: 30px;
-  // text-align: center; 
+  // text-align: center;
 }
 
-.card::before,
-.card::after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  // background-color: #fff;
-  background-color: var(--shape-color, #fff);
-  border-radius: 50%;
-  transform: rotate(45deg);
-  animation: moveShape 4s infinite linear;
-}
+// .card::before,
+// .card::after {
+//   content: '';
+//   position: absolute;
+//   width: 30px;
+//   height: 30px;
+//   // background-color: #fff;
+//   background-color: var(--shape-color, #fff);
+//   border-radius: 50%;
+//   transform: rotate(45deg);
+//   animation: moveShape 4s infinite linear;
+// }
 
 // .card::before {
 //   top: -15px;
@@ -136,11 +136,17 @@ body {
 }
 
 label,
-.text-center{
+.text-center,
+.user-login{
   color: wheat;
   text-align: center;
   size: 25px;
   margin-bottom: 15px;
+}
+
+.user-login:hover{
+  // color: rgb(112, 107, 98);
+  color: #ced3d6;
 }
 
 input, ::placeholder{
