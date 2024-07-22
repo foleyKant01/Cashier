@@ -1,5 +1,23 @@
     <!-- <p>product-management works!</p> -->
 
+    <div class="navbar">
+        <div class="navbar-left">
+            <span>Cashier </span>
+            <span>Welcome back, <strong>Username</strong></span>
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="navbar-icon" title="Home">
+                <img src="path/to/home-icon.png" alt="Home">
+            </a>
+            <a href="#" class="navbar-icon" title="Logout">
+                <img src="path/to/logout-icon.png" alt="Logout">
+            </a>
+            <a href="#" class="navbar-icon" title="Shut Up">
+                <img src="path/to/shut-up-icon.png" alt="Shut Up">
+            </a>
+        </div>
+    </div>
+
     <div class="product-management-container">
       <table class="product-table">
       <thead>
@@ -13,12 +31,27 @@
       </thead>
       <tbody>
           <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
+
+          <tr>
+            <td class="searsh-product" colspan="2">
+                Recherche: <input class="search" type="text" name="product" id="product" placeholder=" search product">
+            </td>
+
+            <td colspan="3">
+                <div class="vrc-container">
+                    <div class="col-md-6">
+                        <button class="vrc">En vrac</button>
+                        <input class="poids" type="text" name="poids" id="poids" placeholder="poids">
+                    </div>                
+                </div>
+            </td>
+        </tr>
       </tbody>
       </table>
 
