@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './auth.component.scss'
 })
 export class AuthComponent {
+  login(value: any) {
+    throw new Error('Method not implemented.');
+  }
 
 }

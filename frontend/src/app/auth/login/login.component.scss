@@ -1,180 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #0d456c;
-  // background-color: #f2f2f2;
-  // background-color: #607d8b;
-  // background-color: #34495e;
-  // background-color: #556b2f;
-  min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  // font-weight: normal;
-  font-weight: 400;
-  overflow-x: hidden;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 
-.container {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
+.login-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
 }
 
-.card {
-  display: flex;
-  border: 2px solid #fff;
-  border-radius: 30px;
-  background-color: #0d456c;
-  // background-color: #f2f2f2;
-  // background-color: #607d8b;
-  // background-color: #34495e;
-  // background-color: #556b2f;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  // height: 75vh;
-  margin-top: 156px;
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 24px;
 }
-
-.card-body {
-  padding: 30px;
-  // text-align: center;
-}
-
-// .card::before,
-// .card::after {
-//   content: '';
-//   position: absolute;
-//   width: 30px;
-//   height: 30px;
-//   // background-color: #fff;
-//   background-color: var(--shape-color, #fff);
-//   border-radius: 50%;
-//   transform: rotate(45deg);
-//   animation: moveShape 4s infinite linear;
-// }
-
-// .card::before {
-//   top: -15px;
-//   left: 20%;
-// }
-
-// .card::after {
-//   bottom: -15px;
-//   right: 20%;
-// }
-
-// @keyframes moveShape {
-//   0% {
-//     transform: rotate(45deg) translateX(0) translateY(0);
-//   }
-//   50% {
-//     transform: rotate(45deg) translateX(80px); /* Déplacement horizontal */
-//   }
-//   100% {
-//     transform: rotate(45deg) translateX(0);
-//   }
-// }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
-.form-control {
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  padding: 10px;
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-weight: bold;
+}
+
+input {
   width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  
+  &:focus {
+    outline: none;
+    border-color: #667eea;
+  }
 }
 
-.btn-primary {
-  background-color: wheat;
-  color: #4e4848;
+button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #667eea;
+  color: white;
   border: none;
-  padding: 10px 24px;
-  border-radius: 4px;
-  font-size: 20px;
-  font-weight: 500;
-  text-transform: uppercase;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  // border-radius: 4px;
-  margin-top: 15px; 
-  transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s;
-  display: block;
-  margin: auto;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  &:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  &:hover:not(:disabled) {
+    background-color: #5a6fd6;
+  }
 }
-
-.btn-primary:hover {
-  background-color: #495056;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
-  border-color: #6C757D;
-  color: #fff;
-}
-
-.valid-feedback,
-.invalid-feedback {
-  display: none;
-  font-size: 14px;
-}
-
-.is-valid .valid-feedback,
-.is-invalid .invalid-feedback {
-  display: block;
-}
-
-label,
-.text-center,
-.user-login{
-  color: wheat;
-  text-align: center;
-  size: 25px;
-  margin-bottom: 15px;
-}
-
-.user-login:hover{
-  // color: rgb(112, 107, 98);
-  color: #ced3d6;
-}
-
-input, ::placeholder{
-  color: #0d456c;
-}
-
-/* Cashier */
-
-.decorative-dots::before,
-.decorative-dots::after  {
-  content: '...';
-  color: #cdd6c1;
-  // color: #e8e8e8;
-  // color: #5e6266;
-  font-size: 30px;
-  // display: block;
-  // text-align: center;
-  line-height: 1;
-    // margin-top: 2px;
-}
-
-
-// .decorative-dots::before,
-// .decorative-dots::after {
-//   color: #; /* Couleur grise */
-// }
-
-// .decorative-dots::before,
-// .decorative-dots::after {
-//   color: #e8e8e8; /* Gris clair */
-// }

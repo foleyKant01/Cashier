@@ -1,0 +1,54 @@
+    <!-- <p>product-management works!</p> -->
+
+        <div class="product-management-container">
+            <table class="product-table">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Nom Produit</th>
+                    <th>Prix Unitaire</th>
+                    <th>En vrac</th>
+                    <th>Prix Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+            </tbody>
+            </table>
+
+            <div class="calculator">
+                <!-- <div class="calculator-display">
+                <span id="display">0</span>
+                </div> -->
+                <div class="calculator-buttons">
+                <button (click)="appendNumber(1)">1</button>
+                <button (click)="appendNumber(2)">2</button>
+                <button (click)="appendNumber(3)">3</button>
+                <button (click)="appendNumber(4)">4</button>
+                <button (click)="appendNumber(5)">5</button>
+                <button (click)="appendNumber(6)">6</button>
+                <button (click)="appendNumber(7)">7</button>
+                <button (click)="appendNumber(8)">8</button>
+                <button (click)="appendNumber(9)">9</button>
+                <button (click)="appendNumber(0)">0</button>
+                <button (click)="deleteNumber()">Delete</button>
+                <button (click)="calculateTotal()">V</button>
+                </div>
+                <div class="payment-info">
+                <div>Net à payer CFA : <span id="netToPay">1450,00 Fran CFA</span></div>
+                <div>Reçu:
+                    <input type="number" id="receivedAmount" placeholder="2000" (input)="updateReceived($event)">
+                    <!-- <button class="valid-product" type="submit">Valider</button> -->
+                </div>
+                <div>Rendu: <span id="change">550 Fran CFA</span></div>
+                </div>
+                <button (click)="printInvoice()">Imprimer la facture</button>
+            </div>
+
+        </div>

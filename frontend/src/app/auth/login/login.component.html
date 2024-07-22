@@ -1,16 +1,8 @@
 <!-- <p>login works!</p> -->
 
-<!-- login.component.html -->
-<body>
+<!-- <body>
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <!-- <div class="col-md-6 image-container">
-        <img src=".assets/img/login_bg.jpg" alt="Background" class="login-image">
-        <img src="/frontend/assets/img/login_bg.jpg" alt="">
-        <img src="../../../assets/img/login_bg.jpg" alt="">
-         <img src="https://cdn.dribbble.com/userupload/4011871/file/original-b3f44e182b2846bd4a6dcdcba12b2327.png?resize=1024x768" alt="">
-      </div> -->
-
       <div class="col-md-6">
         <div class="card">
           <div class="card-body">
@@ -23,13 +15,11 @@
               <div class="form-group">
                 <label for="email">Email address</label>
                 <input type="email" id="email" class="form-control" placeholder="Enter email" required>
-                <!-- <div class="valid-feedback">Valid email!</div> -->
                 <div class="invalid-feedback">Please enter a valid email.</div>
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" class="form-control" placeholder="Enter password" required>
-                <!-- <div class="valid-feedback">Valid password!</div> -->
                 <div class="invalid-feedback">Please enter a valid password.</div>
               </div>
               <button type="submit" class="btn btn-primary btn-block">Log in</button>
@@ -39,4 +29,33 @@
       </div>
     </div>
   </div>    
-</body>
+</body> -->
+
+
+<!-- <div class="login-container">
+  <h2>Connexion</h2>
+  <form action="#" method="post">
+    <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+    <input type="password" name="password" placeholder="Mot de passe" required>
+    <button type="submit">Se connecter</button>
+  </form>
+</div> -->
+
+
+
+<div class="login-container">
+  <div class="login-card">
+    <h2>Connexion</h2>
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="username">Nom d'utilisateur</label>
+        <input type="text" id="username" formControlName="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" formControlName="password" required>
+      </div>
+      <button type="submit">Se connecter</button>
+    </form>
+  </div>
+</div>
