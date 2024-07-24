@@ -9,5 +9,5 @@ import { LoginComponent } from './auth/login/login.component';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes)]
-  
+
 };
