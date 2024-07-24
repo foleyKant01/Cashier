@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 // import { ProductManagementComponent } from './product-management/product-management.component';
 
 export const routes: Routes = [
-<<<<<<< HEAD
+// <<<<<<< HEAD
     // { path: '', redirectTo: '/home', pathMatch: 'full' },
     // { path: 'login', component: LoginComponent },
     // { path: 'selling-page', component: SellingPageComponent },
@@ -27,7 +27,7 @@ export const routes: Routes = [
         path: 'user',
         loadChildren: () => import('../app/user/user.component').then( m => m.UserComponent)
       },
-=======
+// =======
   { path:'', component: AppComponent,
     children: [
       {path: '', redirectTo: 'auth', pathMatch: 'full' },
