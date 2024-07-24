@@ -34,7 +34,7 @@ export const routes: Routes = [
       {path: 'user', loadChildren: () => import('./user/user.module').then((m) => m.UserModule)},
       {path: 'auth', loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule)},
       {path: 'admin', loadChildren: () => import('./admin/admin.module').then((m) => m.AdminModule)},
->>>>>>> 395257783d8a62c474f22e1e5fe69fa256fe7e76
+// >>>>>>> 395257783d8a62c474f22e1e5fe69fa256fe7e76
 
       // { path: '**', component: NotfoundComponent }
       ]
