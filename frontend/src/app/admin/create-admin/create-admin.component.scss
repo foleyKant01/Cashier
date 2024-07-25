@@ -1,0 +1,35 @@
+.create-admin {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+ 
+  h2{
+    margin-top: 15vh;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #1f85f3;
+  }

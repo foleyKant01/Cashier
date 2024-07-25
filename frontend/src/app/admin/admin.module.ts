@@ -12,7 +12,6 @@ import { routes } from '../app.routes';
     AdminRoutingModule,
     HttpClientModule,
     RouterModule.forChild(routes)
-
   ]
 })
 export class AdminModule { }
