@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { AdminRoutingModule } from './admin-routing.module';
 import { MyServiceService } from '../my-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterLink, RouterModule } from '@angular/router';
+import { routes } from '../app.routes';
 
 
 @NgModule({
@@ -11,7 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forChild(routes)
+
   ],
   providers: [
     MyServiceService // Ajoutez BackService aux providers

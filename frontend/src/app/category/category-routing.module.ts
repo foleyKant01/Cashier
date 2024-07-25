@@ -16,9 +16,7 @@ const routes: Routes = [
       { path:'delete-category', component: DeleteCategoryComponent },
       { path:'edit-category', component: EditCategoryComponent },
       { path:'single-category', component: SingleCategoryComponent },
-
-      // { path: '**', component: NotfoundComponent }
-      ]
+    ]
   }
 ];
 
