@@ -33,8 +33,12 @@ class User(db.Model):
 class Item(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     it_name = db.Column(db.String(128), nullable=False)
+    it_description = db.Column(db.String(128), nullable=False)
     it_price = db.Column(db.String(128), nullable=False)
-    it_codebarre = db.Column(db.String(128), nullable=False)
+    it_brand = db.Column(db.String(128), nullable=False)
+    it_barcode = db.Column(db.String(128), nullable=False)
+    it_stock = db.Column(db.String(128), nullable=False)
+    it_lowstock = db.Column(db.String(128), nullable=False)
     it_uid = db.Column(db.String(128), nullable=False)
     creation_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
     update_date = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)

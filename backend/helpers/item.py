@@ -12,15 +12,23 @@ def SaveItem():
     reponse = {}
 
     try:
-        it_name = (request.json.get('name'))
+        it_name = (request.json.get('itemname'))
         it_price = (request.json.get('price'))
-        it_codebarre = (request.json.get('codebarre'))
+        it_description = (request.json.get('description'))
+        it_brand = (request.json.get('brand'))
+        it_barcode = (request.json.get('barcode'))
+        it_stock = (request.json.get('stock'))
+        it_lowstock = (request.json.get('lowstock'))
         it_uid = str(uuid.uuid4())
         
         new_item = Item()
         new_item.it_name = it_name
         new_item.it_price = it_price
-        new_item.it_codebarre = it_codebarre
+        new_item.it_description = it_description
+        new_item.it_brand = it_brand
+        new_item.it_barcode = it_barcode
+        new_item.it_stock = it_stock
+        new_item.it_lowstock = it_lowstock
         new_item.it_uid = it_uid
         
         db.session.add(new_item)
@@ -79,7 +87,7 @@ def ReadSingleItem():
             item_infos = {
                 'name': readSingleItem.it_name,
                 'price': readSingleItem.it_price,
-                'codebarre': readSingleItem.it_codebarre,
+                'barcode': readSingleItem.it_barcode,
                 'it_uid': readSingleItem.it_uid,
             }
 
@@ -106,7 +114,7 @@ def UpdateItem():
         if updateitem:
             updateitem.it_name = request.json.get('name', updateitem.it_name)
             updateitem.it_price = request.json.get('price', updateitem.it_price)            
-            updateitem.it_codebarre = request.json.get('codebarre', updateitem.it_codebarre)
+            updateitem.it_barcode = request.json.get('barcode', updateitem.it_barcode)
             updateitem.it_uid = request.json.get('it_uid', updateitem.it_uid)
 
             db.session.add(updateitem)
@@ -149,13 +157,13 @@ def SearchItem(code):
     reponse = {}
 
     try:
-        readSingleItem = Item.query.filter_by(it_codebarre=code).first()
+        readSingleItem = Item.query.filter_by(it_barcode=code).first()
 
         if readSingleItem:
             item_infos = {
                 'name': readSingleItem.it_name,
                 'price': readSingleItem.it_price,
-                'codebarre': readSingleItem.it_codebarre,
+                'barcode': readSingleItem.it_barcode,
                 'it_uid': readSingleItem.it_uid,
             }
         reponse['status'] = 'Succes'
@@ -174,7 +182,7 @@ def BuyForm():
     items = []
 
     try:
-        code = request.json.get('codebarre')
+        code = request.json.get('barcode')
         if code:
             result = SearchItem(code)
             items.append(result['item'])
