@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-admin',
+  selector: 'app-cashier',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './admin.component.html',
-  styleUrl: './admin.component.scss'
+  templateUrl: './cashier.component.html',
+  styleUrl: './cashier.component.scss'
 })
-export class AdminComponent {
+export class CashierComponent {
 
 }
