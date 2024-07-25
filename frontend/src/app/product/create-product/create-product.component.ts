@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-create-product',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './create-product.component.html',
   styleUrl: './create-product.component.scss'
 })
-export class CreateProductComponent {
+export class CreateProductComponent implements OnInit{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
 }

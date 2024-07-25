@@ -10,11 +10,11 @@ class ItemApi(Resource):
             return SaveItem()
 
     
-    # def get(self, route):
-    #     if route == "readall":
-    #         return ReadAllAdmin()
-    #     if route == "readsingle":
-    #         return ReadSingleAdmin()
+    def get(self, route):
+        if route == "readall":
+            return ReadAllItem()
+        if route == "readsingle":
+            return ReadSingleItem()
             
     
     # def delete(self, route):

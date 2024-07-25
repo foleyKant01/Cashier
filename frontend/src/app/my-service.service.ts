@@ -19,4 +19,15 @@ export class MyServiceService {
     // return this.api.post('mysql+pymysql://root:@localhost/tt_officiel', body, httpOptions)
   }
 
+
+  //API for Product
+  SaveItem(body:any){
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+      })
+    }
+    return this.http.post("http://127.0.0.1:5000/api/item/create", body, httpOptions)
+  }
+
 }
