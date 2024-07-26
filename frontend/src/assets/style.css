@@ -86,7 +86,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: 'Ubuntu', sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -207,7 +207,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Ubuntu', sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -377,7 +377,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: var(--bs-font-monospace);
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1em;
 }
 
@@ -470,7 +470,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: 'Ubuntu', sans-serif;
   font-size: inherit;
   line-height: inherit;
 }
@@ -2993,7 +2993,7 @@ textarea.form-control-lg {
 .btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
-  --bs-btn-font-family: ;
+  --bs-btn-font-family: 'Ubuntu', sans-serif;;
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
@@ -3008,7 +3008,7 @@ textarea.form-control-lg {
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
   display: inline-block;
   padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-  font-family: var(--bs-btn-font-family);
+  font-family: 'Ubuntu', sans-serif;
   font-size: var(--bs-btn-font-size);
   font-weight: var(--bs-btn-font-weight);
   line-height: var(--bs-btn-line-height);
@@ -5793,7 +5793,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: var(--bs-font-sans-serif);
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5903,7 +5903,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-sans-serif);
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8616,7 +8616,7 @@ textarea.form-control-lg {
 }
 
 .font-monospace {
-  font-family: var(--bs-font-monospace) !important;
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
 .fs-1 {
@@ -13744,7 +13744,7 @@ dl, dt, dd, ol, ul, li {
 }
 
 em {
-  font-family: var(--cnvs-secondary-font);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .clear {
@@ -13792,7 +13792,7 @@ em {
 body {
   line-height: 1.5;
   font-size: var(--cnvs-font-size-body);
-  font-family: var(--cnvs-body-font);
+  font-family: 'Ubuntu', sans-serif;
   background: var(--cnvs-body-bg);
 }
 body:not(.stretched) {
@@ -13840,7 +13840,7 @@ h6,
   font-weight: var(--cnvs-headings-font-weight);
   line-height: var(--cnvs-line-height-base);
   margin: 0 0 30px 0;
-  font-family: var(--cnvs-primary-font);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h5, .h5,
@@ -14188,7 +14188,8 @@ span.middot {
 
 .bg-color,
 .bg-color #header-wrap {
-  background-color: rgba(var(--cnvs-themecolor-rgb), var(--bs-bg-opacity, 1)) !important;
+  background-color: rgb(45 106 236) !important;
+  /* background-color: rgba(var(--cnvs-themecolor-rgb), var(--bs-bg-opacity, 1)) !important; */
 }
 
 .bg-color[class*=bg-opacity-] {
@@ -14304,15 +14305,15 @@ span.middot {
 	Font Families
 -----------------------------------------------------------------*/
 .font-body {
-  font-family: var(--cnvs-body-font) !important;
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
 .font-primary {
-  font-family: var(--cnvs-primary-font) !important;
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
 .font-secondary {
-  font-family: var(--cnvs-secondary-font) !important;
+  font-family: 'Ubuntu', sans-serif !important;
 }
 
 .bg-icon {
@@ -17554,7 +17555,7 @@ body:not(.is-expanded-menu):not(.primary-menu-open) .semi-transparent.transparen
 }
 #logo a {
   color: #000;
-  font-family: var(--cnvs-primary-font);
+  font-family: 'Ubuntu', sans-serif;
   font-size: 36px;
   width: 100%;
 }
@@ -17820,7 +17821,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
   color: var(--cnvs-primary-menu-color);
   font-weight: var(--cnvs-primary-menu-font-weight);
   font-size: var(--cnvs-primary-menu-font-size);
-  font-family: var(--cnvs-primary-menu-font);
+  font-family: 'Ubuntu', sans-serif;
   text-transform: var(--cnvs-primary-menu-tt);
   letter-spacing: var(--cnvs-primary-menu-ls);
 }
@@ -17897,7 +17898,7 @@ body:not(.top-search-open) .top-search-parent .primary-menu-trigger {
   font-weight: var(--cnvs-primary-menu-submenu-font-weight);
   color: var(--cnvs-contrast-900);
   letter-spacing: var(--cnvs-primary-menu-submenu-spacing);
-  font-family: var(--cnvs-primary-menu-submenu-font);
+  font-family: 'Ubuntu', sans-serif;
 }
 .sub-menu-container .menu-item > .menu-link div {
   position: relative;
@@ -18941,7 +18942,7 @@ body:not(.is-expanded-menu) .mobile-menu-overlay .menu-container {
   color: var(--cnvs-primary-menu-color) !important;
   font-weight: 500;
   margin-top: 0 !important;
-  font-family: var(--cnvs-primary-font);
+  font-family:'Ubuntu', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -21570,7 +21571,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
   --cnvs-post-entry-link-bg: var(--cnvs-contrast-100);
   --cnvs-post-entry-link-padding: 2rem 0;
   --cnvs-post-entry-link-color: var(--cnvs-heading-color);
-  --cnvs-post-entry-link-font-family: var(--cnvs-primary-font);
+  --cnvs-post-entry-link-font-family: 'Ubuntu', sans-serif;
   --cnvs-post-entry-link-text-transform: none;
   --cnvs-post-entry-link-letter-spacing: 0;
   --cnvs-post-entry-link-font-size: 1.75rem;
@@ -21768,7 +21769,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
   padding: var(--cnvs-post-entry-link-padding);
   text-align: center;
   color: var(--cnvs-post-entry-link-color);
-  font-family: var(--cnvs-post-entry-link-font-family);
+  font-family: 'Ubuntu', sans-serif;
   text-transform: var(--cnvs-post-entry-link-text-transform);
   letter-spacing: var(--cnvs-post-entry-link-letter-spacing);
   font-size: var(--cnvs-post-entry-link-font-size);
@@ -21789,7 +21790,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 .entry-link span {
   display: block;
   margin-top: 5px;
-  font-family: var(--cnvs-secondary-font);
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   font-weight: normal;
   text-transform: none;
@@ -21806,7 +21807,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 }
 .entry blockquote p {
   font-weight: 400;
-  font-family: var(--cnvs-secondary-font);
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
 }
 
@@ -21953,7 +21954,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-  font-family: var(--cnvs-primary-font);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @media (min-width: 992px) {
@@ -21996,7 +21997,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 }
 .more-link {
   display: inline-block;
-  font-family: var(--cnvs-secondary-font);
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
   text-underline-offset: 0.375rem;
   text-decoration-thickness: 1px;
@@ -22146,7 +22147,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 .comment-content .comment-author span a {
   font-size: 0.75rem;
   font-weight: normal;
-  font-family: var(--cnvs-primary-font);
+  font-family: 'Ubuntu', sans-serif;
   color: var(--cnvs-contrast-500);
 }
 
@@ -22266,7 +22267,7 @@ div.alignright {
 .wp-caption {
   text-align: center;
   margin: 10px 20px 13px 20px;
-  font-family: var(--cnvs-body-font), Georgia, "Times New Roman", Times, serif;
+  font-family: 'Ubuntu', sans-serif;
   font-style: italic;
 }
 
@@ -22965,7 +22966,7 @@ td.actions {
   --cnvs-btn-fontsize: 1.25rem;
   --cnvs-btn-lineheight: 1;
   text-align: left;
-  font-family: var(--cnvs-body-font);
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
 .button-desc span {
@@ -22973,7 +22974,7 @@ td.actions {
   margin-top: 0.75rem;
   font-size: 0.875rem;
   font-weight: 400;
-  font-family: var(--cnvs-secondary-font);
+  font-family: 'Ubuntu', sans-serif;
   text-transform: none;
 }
 .button-desc i {
@@ -24022,7 +24023,7 @@ td.actions {
 .fbox-content h3, .fbox-content .h3 {
   font-size: var(--cnvs-featured-box-font-size);
   font-weight: var(--cnvs-featured-box-font-weight);
-  font-family: var(--cnvs-primary-font);
+  font-family: 'Ubuntu', sans-serif;
   text-transform: var(--cnvs-featured-box-font-tt);
   margin-bottom: 0;
   color: var(--cnvs-featured-box-font-color);
@@ -24220,7 +24221,7 @@ td.actions {
 }
 .fbox-center.fbox-italic p {
   font-style: italic;
-  font-family: var(--cnvs-body-font);
+  font-family: 'Ubuntu', sans-serif;
 }
 .fbox-bg.fbox-center {
   margin-top: 2rem;
@@ -26808,7 +26809,7 @@ td.actions {
   --cnvs-team-title-font-size: 1.25rem;
   --cnvs-team-title-designation-font-size: 1rem;
   --cnvs-team-title-designation-font-color: var(--cnvs-contrast-600);
-  --cnvs-team-title-designation-font-family: var(--cnvs-body-font);
+  --cnvs-team-title-designation-font-family: 'Ubuntu', sans-serif;
   --cnvs-team-title-designation-font-weight: 400;
   --cnvs-team-title-designation-font-style: normal;
   --cnvs-team-title-designation-icon-width: 32px;
@@ -26863,7 +26864,7 @@ td.actions {
   display: block;
   color: var(--cnvs-team-title-designation-font-color);
   font-weight: var(--cnvs-team-title-designation-font-weight);
-  font-family: var(--cnvs-team-title-designation-font-family);
+  font-family: 'Ubuntu', sans-serif;
   font-style: var(--cnvs-team-title-designation-font-style);
   font-size: var(--cnvs-team-title-designation-font-size);
   margin-top: 5px;
@@ -27150,7 +27151,7 @@ td.actions {
 .counter {
   --cnvs-counter-font-size: 42px;
   --cnvs-counter-font-weight: 700;
-  --cnvs-counter-font-family: var(--cnvs-primary-font);
+  --cnvs-counter-font-family: 'Ubuntu', sans-serif;
   --cnvs-counter-caption-size: 1.125rem;
   --cnvs-counter-sm-font-size: 28px;
   --cnvs-counter-lg-font-size: 56px;
@@ -27159,7 +27160,7 @@ td.actions {
   --cnvs-counter-lined-width: 15%;
   font-size: var(--cnvs-counter-font-size);
   font-weight: var(--cnvs-counter-font-weight);
-  font-family: var(--cnvs-counter-font-family);
+  font-family: 'Ubuntu', sans-serif;
 }
 .counter.counter-small {
   --cnvs-counter-font-size: var(--cnvs-counter-sm-font-size);
@@ -28304,7 +28305,7 @@ h3.titular-title, .titular-title.h3 {
 :root {
   --cnvs-before-heading-font-size: 1rem;
   --cnvs-before-heading-font-weight: 400;
-  --cnvs-before-heading-font-family: var(--cnvs-secondary-font);
+  --cnvs-before-heading-font-family: 'Ubuntu', sans-serif;
   --cnvs-before-heading-ls: 0px;
   --cnvs-before-heading-tt: none;
   --cnvs-before-heading-fst: normal;
@@ -28317,7 +28318,7 @@ h3.titular-title, .titular-title.h3 {
   margin: 0 0 var(--cnvs-before-heading-margin-bottom);
   font-size: var(--cnvs-before-heading-font-size);
   font-weight: var(--cnvs-before-heading-font-weight);
-  font-family: var(--cnvs-before-heading-font-family);
+  font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   letter-spacing: var(--cnvs-before-heading-ls);
   text-transform: var(--cnvs-before-heading-tt);
@@ -28556,7 +28557,7 @@ blockquote.float-end {
   right: 0;
 }
 .blockquote-footer {
-  font-family: var(--cnvs-secondary-font);
+  font-family: 'Ubuntu', sans-serif;
   font-size: 85%;
 }
 .blockquote-icon > * {
@@ -28825,7 +28826,7 @@ blockquote.float-end {
 
 .gm-style .gm-style-iw h3 span, .gm-style .gm-style-iw .h3 span {
   font-size: inherit;
-  font-family: inherit;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #map-overlay {
@@ -29175,7 +29176,7 @@ blockquote.float-end {
 }
 .nav-tree ul ul a {
   padding: 6px 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   padding-left: 20px;
 }
 .nav-tree ul ul ul a {
@@ -29198,7 +29199,7 @@ blockquote.float-end {
   padding: 8px 0;
   color: var(--cnvs-heading-color);
   font-size: 1rem;
-  font-family: var(--cnvs-primary-font);
+  font-family: 'Ubuntu', sans-serif;
   transition: transform;
 }
 .nav-tree li li a {
@@ -29237,7 +29238,7 @@ blockquote.float-end {
   line-height: 1;
   font-size: 80px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-  font-family: var(--cnvs-primary-font);
+  font-family: 'Ubuntu', sans-serif;
 }
 .wedding-head .first-name,
 .wedding-head .last-name,
@@ -29260,13 +29261,13 @@ blockquote.float-end {
   font-size: 56px;
   font-weight: 400;
   font-style: italic;
-  font-family: "Playfair Display", serif;
+  font-family: 'Ubuntu', sans-serif;
   text-transform: none;
 }
 .wedding-head .and {
   margin: 0;
   font-size: 200px;
-  font-family: "Times New Roman", serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /* --------------------------------------------------------------
@@ -29854,7 +29855,7 @@ form .form-group {
   --cnvs-input-btn-padding-y: 0.375rem;
   --cnvs-input-btn-padding-x: 0.75rem;
   --cnvs-input-btn-font-size: 1rem;
-  --cnvs-input-font-family: ;
+  --cnvs-input-font-family: 'Ubuntu', sans-serif;;
   --cnvs-input-btn-font-weight: 400;
   --cnvs-input-btn-line-height: 1.5;
   --cnvs-input-btn-input-color: var(--bs-body-color);
@@ -29874,7 +29875,7 @@ form .form-group {
   --cnvs-input-focus-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
   padding: var(--cnvs-input-btn-padding-y) var(--cnvs-input-btn-padding-x);
   font-size: var(--cnvs-input-btn-font-size);
-  font-family: var(--cnvs-input-font-family);
+  font-family: 'Ubuntu', sans-serif;
   font-weight: var(--cnvs-input-btn-font-weight);
   line-height: var(--cnvs-input-btn-line-height);
   color: var(--cnvs-input-btn-input-color);
@@ -30300,7 +30301,7 @@ label.error {
 .widget-filter-links li a {
   display: block;
   color: var(--cnvs-heading-color);
-  font-family: var(--cnvs-primary-font);
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
 }
 .widget-filter-links li span {
@@ -31507,7 +31508,7 @@ label.radio, label.checkbox {
   line-height: 1;
   text-align: center;
   transform: translate(-50%, -50%);
-  font-family: "bootstrap-icons";
+  font-family: 'Ubuntu', sans-serif;
   line-height: inherit;
 }
 .mfp-preloader a {
@@ -31530,7 +31531,7 @@ label.radio, label.checkbox {
   width: auto;
   height: auto;
   font-size: 1.5rem;
-  font-family: inherit;
+  font-family: 'Ubuntu', sans-serif;
   animation: none;
   line-height: 1.5;
 }

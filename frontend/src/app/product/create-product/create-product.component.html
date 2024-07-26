@@ -3,25 +3,25 @@
     <div class="form-group">
       <label for="itemname">Nom du produit</label>
       <input type="text" id="itemname" formControlName="itemname" class="form-control">
-      <div *ngIf="productForm.get('itemname')?.invalid && productForm.get('itemname')?.touched" class="text-danger">
+      <!-- <div *ngIf="productForm.get('itemname')?.invalid && productForm.get('itemname')?.touched" class="text-danger">
         Le nom du produit est requis.
-      </div>
+      </div> -->
     </div>
 
     <div class="form-group">
       <label for="sku">Sku</label>
       <input type="text" id="sku" formControlName="sku" class="form-control">
-      <div *ngIf="productForm.get('sku')?.invalid && productForm.get('sku')?.touched" class="text-danger">
+      <!-- <div *ngIf="productForm.get('sku')?.invalid && productForm.get('sku')?.touched" class="text-danger">
         Le SKU est requis.
-      </div>
+      </div> -->
     </div>
 
     <div class="form-group">
       <label for="price">Price</label>
       <input type="number" id="price" formControlName="price" class="form-control">
-      <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="text-danger">
+      <!-- <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="text-danger">
         Le prix est requis et doit être positif.
-      </div>
+      </div> -->
     </div>
 
     <div class="form-group">
