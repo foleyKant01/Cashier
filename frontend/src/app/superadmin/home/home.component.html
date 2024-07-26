@@ -2,48 +2,223 @@
   <div class="col-11 item">
     <div style="justify-content: space-between; padding: 0px 40px 0px 40px;" class="row mb-3 mt-4">
       <div style="height: 250px; background-color: rgb(0, 0, 210); display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
-        <h4>Admin module </h4>
+        <h4>Register module </h4>
         <div style="align-items: flex-end; justify-content: space-between; padding: 0px 25px 0px 25px;" class="col d-flex">
-          <a routlink="">
-            <i class="fa-solid fa-plus fa-2x"></i>
-          </a>
-          <i class="fa-solid fa-eye fa-2x"></i>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#UserModal">
+            <i class="fa-solid fa-plus fa-2x icon-black"></i>
+          </button>
+
+          <!-- Modal -->
+          <div style="color: black;" class="modal fade" id="UserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Register user</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container mt-2">
+                    <form style="text-align: left;">
+                      <div class="form-group">
+                        <label for="fullname">Fullname</label>
+                        <input type="text" id="fullname" formControlName="fullname" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" formControlName="username" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" formControlName="email" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" formControlName="password" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="role">Role</label>
+                        <select id="role" formControlName="role" class="form-control">
+                          <option value="admin">Admin</option>
+                          <option value="cashier">Cashier</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Create</button>
+                    </form>
+                  </div>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <i class="fa-solid fa-eye fa-2x icon-black"></i>
         </div>
       </div>
       <div style="height: 250px; background-color: rgb(160, 0, 0);display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
-        <h4>Cashier module </h4>
+        <h4>Category module</h4>
         <div style="align-items: flex-end; justify-content: space-between; padding: 0px 25px 0px 25px;" class="col d-flex">
-          <i class="fa-solid fa-plus fa-2x"></i>
-          <i class="fa-solid fa-eye fa-2x"></i>
+           <!-- Button trigger modal -->
+          <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#CategoryModal">
+            <i class="fa-solid fa-plus fa-2x icon-black"></i>
+          </button>
+
+          <!-- Modal -->
+          <div style="color: black;" class="modal fade" id="CategoryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create category</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container mt-2">
+                    <form style="text-align: left;">
+                      <div class="form-group">
+                        <label for="name">Nom de la catégorie</label>
+                        <input type="text" id="name" class="form-control" formControlName="name">
+                      </div>
+                      <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" class="form-control" formControlName="description"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="status">Statut</label>
+                        <select id="status" class="form-control" formControlName="status">
+                          <option value="active">Active</option>
+                          <option value="inactive">Inactive</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Créer</button>
+                    </form>
+                  </div>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <i class="fa-solid fa-eye fa-2x icon-black"></i>
         </div>
       </div>
       <div style="height: 250px; background-color: rgb(224, 191, 0);display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
-        <h4>Category module</h4>
+        <h4>Product module</h4>
         <div style="align-items: flex-end; justify-content: space-between; padding: 0px 25px 0px 25px;" class="col d-flex">
-          <i class="fa-solid fa-plus fa-2x"></i>
-          <i class="fa-solid fa-eye fa-2x"></i>
+           <!-- Button trigger modal -->
+           <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ProductModal">
+            <i class="fa-solid fa-plus fa-2x icon-black"></i>
+           </button>
+
+           <div style="color: black;" class="modal fade bd-example-modal-lg" id="ProductModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+             <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Create Product</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body p-0">
+                  <div class="container mt-2">
+                    <form style="text-align: left; justify-content: space-between;" class="row d-flex">
+                      <div class="col-5 p-0 m-0">
+                        <div class="form-group">
+                          <label for="product_name">Product name</label>
+                          <input type="text" id="product_name" class="form-control" formControlName="product_name">
+                        </div>
+                        <div class="form-group">
+                          <label for="description">Description</label>
+                          <textarea id="description" class="form-control" formControlName="description"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="price">Price</label>
+                          <input type="number" id="price" class="form-control" formControlName="price">
+                        </div>
+                        <div class="form-group">
+                          <label for="sku">SKU (Stock Keeping Unit)</label>
+                          <input type="text" id="sku" class="form-control" formControlName="sku">
+                        </div>
+                        <div class="form-group">
+                          <label for="brand">Brand</label>
+                          <input type="text" id="brand" class="form-control" formControlName="brand">
+                        </div>
+                        <div class="form-group">
+                          <label for="barcode">Barcode</label>
+                          <input type="text" id="barcode" class="form-control" formControlName="barcode">
+                        </div>
+                        <div class="form-group">
+                          <label for="category">Catégory</label>
+                          <select id="category" class="form-control" formControlName="category">
+                            <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-6 p-0 m-0">
+                        <div class="form-group">
+                          <label for="inventory_level">Inventory level</label>
+                          <input type="number" id="inventory_level" class="form-control" formControlName="inventory_level">
+                        </div>
+                        <div class="form-group">
+                          <label for="low_inventory">Low Inventory</label>
+                          <input type="number" id="low_inventory" class="form-control" formControlName="low_inventory">
+                        </div>
+                        <div class="form-group">
+                          <label for="supplier">Supplier</label>
+                          <input type="text" id="supplier" class="form-control" formControlName="supplier" >
+                        </div>
+                        <div class="form-group">
+                          <label for="weight">Weight</label>
+                          <input type="number" id="weight" class="form-control" formControlName="weight" >
+                        </div>
+                        <div class="form-group">
+                          <label for="dimensions">Dimensions</label>
+                          <input type="text" id="dimensions" class="form-control" formControlName="dimensions">
+                        </div>
+                        <div class="form-group">
+                          <label for="image">Image</label>
+                          <input type="file" id="image" class="form-control" formControlName="image">
+                        </div>
+                        <div class="form-group">
+                          <label for="status">Statut</label>
+                          <select id="status" class="form-control" formControlName="status">
+                            <option value="active">Actif</option>
+                            <option value="inactive">Inactif</option>
+                          </select>
+                        </div>
+                      </div>
+
+
+                      <button type="submit" class="btn btn-primary">Create</button>
+                    </form>
+                  </div>
+                </div>
+               </div>
+             </div>
+           </div>
+          <i class="fa-solid fa-eye fa-2x icon-black"></i>
         </div>
       </div>
       <div style="height: 250px; background-color: rgb(192, 70, 0); display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
-        <h4>Product module</h4>
-        <div style="align-items: flex-end; justify-content: space-between; padding: 0px 25px 0px 25px;" class="col d-flex">
-          <i class="fa-solid fa-plus fa-2x"></i>
-          <i class="fa-solid fa-eye fa-2x"></i>
-        </div>
-      </div>
-      <div style="height: 250px; background-color: black; display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
         <h4>Sales module</h4>
         <form style="align-items: flex-end;" action="" class="m-0">
           <input type="date"><br>
           <button style="border-radius: 5px; border: 0;" class="mt-2" type="submit">Validate</button>
         </form>
       </div>
-    </div>
-    <div style="justify-content: space-between; padding: 0px 40px 0px 40px;" class="row mb-3 mt-4">
       <div style="height: 250px; background-color: black;" class="col-2 center pt-5">
         <i class="fa-solid fa-download fa-3x mt-2"></i>
         <h4 class="mt-2">Download csv</h4>
       </div>
+    </div>
+    <div style="justify-content: space-between; padding: 0px 40px 0px 40px;" class="row mb-3 mt-4">
       <div style="height: 250px; background-color: black;" class="col-2 center pt-5">
         <i class="fa-solid fa-magnifying-glass fa-3x mt-2"></i>
         <h4 class="mt-2">Search</h4>
@@ -55,10 +230,62 @@
       <div style="height: 250px; background-color: rgb(29, 146, 0);display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
         <h4>Supplier module</h4>
         <div style="align-items: flex-end; justify-content: space-between; padding: 0px 25px 0px 25px;" class="col d-flex">
-          <i class="fa-solid fa-plus fa-2x"></i>
-          <i class="fa-solid fa-eye fa-2x"></i>
+           <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+            <i class="fa-solid fa-plus fa-2x icon-black"></i>
+          </button>
+
+          <!-- Modal -->
+          <div style="color: black;" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container mt-5">
+                    <form style="text-align: left;">
+                      <div class="form-group">
+                        <label for="fullname">Fullname</label>
+                        <input type="text" id="fullname" formControlName="fullname" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" formControlName="username" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" formControlName="email" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" formControlName="password" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label for="role">Role</label>
+                        <select id="role" formControlName="role" class="form-control">
+                          <option value="admin">Admin</option>
+                          <option value="cashier">Cashier</option>
+                        </select>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Ajouter</button>
+                    </form>
+                  </div>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <i class="fa-solid fa-eye fa-2x icon-black"></i>
         </div>
       </div>
+      <div class="col-2"></div>
       <div class="col-2"></div>
     </div>
   </div>
