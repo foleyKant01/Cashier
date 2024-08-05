@@ -6,6 +6,7 @@ import { CreateCashierComponent } from './create-cashier/create-cashier.componen
 import { DeleteCashierComponent } from './delete-cashier/delete-cashier.component';
 import { EditCashierComponent } from './edit-cashier/edit-cashier.component';
 import { SingleCashierComponent } from './single-cashier/single-cashier.component';
+import { SellingPageComponent } from './selling-page/selling-page.component';
 
 const routes: Routes = [
   { path:'', component: CashierComponent,
@@ -15,6 +16,7 @@ const routes: Routes = [
       { path:'create-cashier', component: CreateCashierComponent },
       { path:'delete-cashier', component: DeleteCashierComponent },
       { path:'edit-cashier', component: EditCashierComponent },
+      { path:'selling-page', component: SellingPageComponent },
       { path:'single-cashier', component: SingleCashierComponent },
     ]
   }

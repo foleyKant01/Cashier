@@ -1,0 +1,95 @@
+
+<div class="cashier-dashboard">
+  <!-- <header>
+    <h1>Cashier Dashboard</h1>
+    <div class="user-info">
+      <span>cashier Name</span>
+      <button>Log out</button>
+    </div>
+  </header> -->
+
+  <main>
+    <section class="sale-section">
+      <!-- <h2>New sale</h2>
+      <div class="product-entry">
+        <input type="text"placeholder="Code produit ou scanner QR">
+        <button>Add to cart</button>
+      </div> -->
+      <div class="product-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Product name</th>
+              <th>Quantity</th>
+              <th>Unit price</th>
+              <th>weight</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Product name</td>
+              <td>
+                <!-- <button>-</button> -->
+                quantity
+                <!-- <button>+</button> -->
+              </td>
+              <td>unit Price</td>
+              <td>weight</td>
+              <td>Total</td>
+              <!-- <td><button>Supprimer</button></td> -->
+              <td><button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="sale-total">
+        <h3>Total:</h3>
+      </div>
+      <div class="payment-options">
+        <button>Cash payment</button>
+        <button>credit card payment</button>
+      </div>
+    </section>
+
+    <section class="quantity-selector">
+      <div class="quantity-display">
+        <input type="number" readonly value="0">
+      </div>
+      <div class="numpad">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button class="clear">C</button>
+        <button class="remove">
+          <i class="fas fa-minus"></i>
+        </button>
+      </div>
+      <button class="validate">
+        <i class="fas fa-check"></i> Validate
+      </button>
+    </section>
+
+    <section class="receipt-section">
+      <h2>Last receipt</h2>
+      <div class="receipt">
+        <p>Receipt number: <span></span></p>
+        <!-- <p>Date: <span></span></p> -->
+        <p>Total: <span></span></p>
+        <p>amount Received: <span></span></p>
+        <p>change Amount: <span></span></p>
+        <button>
+          <i class="fas fa-print"></i> Print receipt
+        </button>
+      </div>
+    </section>
+  </main>
+</div>
