@@ -28,6 +28,8 @@
             </tr>
           </thead>
           <tbody>
+           
+            
             <tr>
               <td>Product name</td>
               <td>
@@ -53,7 +55,20 @@
       </div>
     </section>
 
-    <section class="quantity-selector">
+    <!-- <section class="receipt-section">
+      <h2>Last receipt</h2>
+      <div class="receipt">
+        <p>Receipt number: <span></span></p>
+        <p>Total: <span></span></p>
+        <p>amount Received: <span></span></p>
+        <p>change Amount: <span></span></p>
+        <button>
+          <i class="fas fa-print"></i> Print receipt
+        </button>
+      </div>
+    </section> -->
+
+    <!-- <section class="quantity-selector">
       <div class="quantity-display">
         <input type="number" readonly value="0">
       </div>
@@ -76,20 +91,47 @@
       <button class="validate">
         <i class="fas fa-check"></i> Validate
       </button>
-    </section>
+    </section> -->
 
-    <section class="receipt-section">
-      <h2>Last receipt</h2>
-      <div class="receipt">
-        <p>Receipt number: <span></span></p>
-        <!-- <p>Date: <span></span></p> -->
-        <p>Total: <span></span></p>
-        <p>amount Received: <span></span></p>
-        <p>change Amount: <span></span></p>
-        <button>
-          <i class="fas fa-print"></i> Print receipt
+    <div class="column">
+      <section class="receipt-section">
+        <h2>Last receipt</h2>
+        <div class="receipt">
+          <p>Receipt number: <span></span></p>
+          <p>Total: <span></span></p>
+          <p>amount Received: <span></span></p>
+          <p>change Amount: <span></span></p>
+          <button>
+            <i class="fas fa-print"></i> Print receipt
+          </button>
+        </div>
+      </section>
+    
+      <section class="quantity-selector">
+        <div class="quantity-display">
+          <input type="number" readonly value="0">
+        </div>
+        <div class="numpad">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>0</button>
+          <button class="clear">C</button>
+          <button class="remove">
+            <i class="fas fa-minus"></i>
+          </button>
+        </div>
+        <button class="validate">
+          <i class="fas fa-check"></i> Validate
         </button>
-      </div>
-    </section>
+      </section>
+    </div>
+
   </main>
 </div>
