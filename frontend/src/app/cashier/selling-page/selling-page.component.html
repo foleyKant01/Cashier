@@ -1,65 +1,32 @@
 
 <div class="cashier-dashboard">
-
-  <main>
-    <section class="sale-section">
-      <div class="product-list">
-        <table>
-          <thead>
-            <tr>
-              <th>Product name</th>
-              <th>Quantity</th>
-              <th>Unit price</th>
-              <th>weight</th>
-              <th>Total</th>
-              <th>Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Product name</td>
-              <td>
-                <!-- <button>-</button> -->
-                quantity
-                <!-- <button>+</button> -->
-              </td>
-              <td>unit Price</td>
-              <td>weight</td>
-              <td>Total</td>
-              <!-- <td><button>Supprimer</button></td> -->
-              <td><button class="delete-btn"><i class="fas fa-trash-alt"></i></button></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="sale-total">
-        <h3>Total:</h3>
-      </div>
-      <div class="payment-options">
-        <button>Cash payment</button>
-        <button>credit card payment</button>
-      </div>
-    </section>
-
-
+  <div class="col-3 menu_gauche">
     <div class="column">
-      <section class="receipt-section">
-        <h2>Last receipt</h2>
-        <div class="receipt">
-          <p>Receipt number: <span></span></p>
-          <p>Total: <span></span></p>
-          <p>amount Received: <span></span></p>
-          <p>change Amount: <span></span></p>
-          <button>
-            <i class="fas fa-print"></i> Print receipt
-          </button>
-        </div>
-      </section>
-    
-      <section class="quantity-selector">
-        <!-- <div class="quantity-display">
-          <input type="number" readonly value="0">
-        </div> -->
+      <h3>Last receipt</h3>
+      <div class="receipt">
+        <small><b>Receipt number:</b></small><br>
+        <div class="space_items">
+          <small class="center"><b>Item:</b> </small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small>ufeioiyeoiuu</small><br>
+          <small></small><br>
+        </div><br>
+        <small><b>Total:</b> </small><br>
+        <small><b class="received_label">amount Received:</b><input type="text" class="received_input"> </small><br>
+        <small><b>change Amount:</b> </small>
+        <button><i class="fas fa-print"></i> Print receipt</button>
+      </div><br>
+      <div class="quantity-selector">
         <div class="numpad">
           <button>7</button>
           <button>8</button>
@@ -71,18 +38,46 @@
           <button>2</button>
           <button>3</button>
           <button></button>
-          <!-- <button class="clear">C</button> -->
           <button>0</button>
-          <!-- <button class="remove">
-            <i class="fas fa-minus"></i>
-          </button> -->
           <button></button>
         </div>
-        <!-- <button class="validate">
-          <i class="fas fa-check"></i> Validate
-        </button> -->
-      </section>
+      </div>
     </div>
+  </div>
+  <div class="col-9 border add_items p-0">
+    <div class="col-12 table-responsive p-0">
+      <table style="border: 0px;" class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th class="col-5">Product name</th>
+            <th class="col-1">Quantity</th>
+            <th class="col-2">Unit price</th>
+            <th class="col-1">weight</th>
+            <th class="col-2">Total</th>
+            <th class="col-1">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td style="justify-content: space-between;" class="d-flex p-1">
+              <button type="button" class="mx-1"><i style="color: #e9af00;" class="fa-solid fa-eye"></i></button>
+              <button type="button" class=""><i class="fa-solid fa-trash-can text-danger"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-12">
+      <div class="payment-options">
+        <button>Cash payment</button>
+        <button>credit card payment</button>
+      </div>
+    </div>
+  </div>
 
-  </main>
 </div>

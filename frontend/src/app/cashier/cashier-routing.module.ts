@@ -11,7 +11,7 @@ import { SellingPageComponent } from './selling-page/selling-page.component';
 const routes: Routes = [
   { path:'', component: CashierComponent,
     children: [
-      { path:'', redirectTo:'create-cashier', pathMatch:'full' },
+      { path:'', redirectTo:'selling-page', pathMatch:'full' },
       { path:'all-cashier', component: AllCashierComponent },
       { path:'create-cashier', component: CreateCashierComponent },
       { path:'delete-cashier', component: DeleteCashierComponent },
