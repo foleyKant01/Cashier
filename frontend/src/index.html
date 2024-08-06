@@ -26,6 +26,13 @@
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+  <style>
+    /* Ajoutez votre CSS ici */
+    .modal-backdrop.show + .d-flex .item {
+        filter: blur(5px);
+        transition: filter 0.3s ease-in-out;
+    }
+  </style>
 
 </head>
 <body class="stretched side-header search-overlay">
