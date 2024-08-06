@@ -121,13 +121,12 @@ th {
 }
 
 .received_label{
-  float: left;
 }
 
 .received_input{
   padding: 0px;
   font-size: small;
-  width: 100px; /* Ajustez la largeur selon vos besoins */
+  max-width: 100px; /* Ajustez la largeur selon vos besoins */
   max-height: 20px;
   margin-left: 5px; /* Espace entre le texte et l'input */
 }
