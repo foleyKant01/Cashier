@@ -4,6 +4,7 @@ import { SuperadminRoutingModule } from './superadmin-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { routes } from '../app.routes';
+import Swal from 'sweetalert2';
 
 @NgModule({
   declarations: [],
@@ -14,4 +15,15 @@ import { routes } from '../app.routes';
     RouterModule.forChild(routes)
   ]
 })
-export class SuperadminModule { }
+export class SuperadminModule {
+
+  onClick(){
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Your work has been saved",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  }
+ }
