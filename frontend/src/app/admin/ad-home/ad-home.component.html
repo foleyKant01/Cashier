@@ -45,7 +45,8 @@
                             <option value="cashier">Cashier</option>
                           </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Create</button>
+                        <!-- sweetalert2 -->
+                        <button type="submit" class="btn btn-primary" (click)="onCLickRegistermodule()">Create</button>
                       </form>
                     </div>
                   </div>
@@ -59,6 +60,7 @@
             <i class="fa-solid fa-eye fa-2x icon-black"></i>
           </div>
         </div>
+
         <div style="height: 250px; background-color: rgb(160, 0, 0);display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
           <h4>Category module</h4>
           <div style="align-items: flex-end; justify-content: space-between; padding: 0px 25px 0px 25px;" class="col d-flex">
@@ -95,7 +97,7 @@
                             <option value="inactive">Inactive</option>
                           </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Créer</button>
+                        <button type="submit" class="btn btn-primary" (click)="onCLickCategorymodule()">Créer</button>
                       </form>
                     </div>
                   </div>
@@ -109,6 +111,7 @@
             <i class="fa-solid fa-eye fa-2x icon-black"></i>
           </div>
         </div>
+
         <div style="height: 250px; background-color: rgb(224, 191, 0);display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
           <h4>Product module</h4>
           <div style="align-items: flex-end; justify-content: space-between; padding: 0px 25px 0px 25px;" class="col d-flex">
@@ -195,8 +198,9 @@
                           </div>
                         </div>
   
-  
-                        <button type="submit" class="btn btn-primary">Create</button>
+
+                        <!-- sweetalert2 -->
+                        <button type="submit" class="btn btn-primary" (click)="onCLickProductmodule()">Create</button>
                       </form>
                     </div>
                   </div>
@@ -206,6 +210,7 @@
             <i class="fa-solid fa-eye fa-2x icon-black"></i>
           </div>
         </div>
+
         <div style="height: 250px; background-color: rgb(192, 70, 0); display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
           <h4>Sales module</h4>
           <form style="align-items: flex-end;" action="" class="m-0">
@@ -213,20 +218,25 @@
             <button style="border-radius: 5px; border: 0;" class="mt-2" type="submit">Validate</button>
           </form>
         </div>
+
         <div style="height: 250px; background-color: black;" class="col-2 center pt-5">
           <i class="fa-solid fa-download fa-3x mt-2"></i>
           <h4 class="mt-2">Download csv</h4>
         </div>
+
       </div>
+
       <div style="justify-content: space-between; padding: 0px 40px 0px 40px;" class="row mb-3 mt-4">
         <div style="height: 250px; background-color: black;" class="col-2 center pt-5">
           <i class="fa-solid fa-magnifying-glass fa-3x mt-2"></i>
           <h4 class="mt-2">Search</h4>
         </div>
+
         <div style="height: 250px; background-color: black;" class="col-2 center pt-5">
           <i class="fa-solid fa-sliders fa-3x mt-2"></i>
           <h4 class="mt-2">Rapport</h4>
         </div>
+
         <div style="height: 250px; background-color: rgb(29, 146, 0);display: flex; flex-direction: column; justify-content: space-between;" class="col-2 center pt-5 pb-2">
           <h4>Supplier module</h4>
           <div style="align-items: flex-end; justify-content: space-between; padding: 0px 25px 0px 25px;" class="col d-flex">
@@ -271,7 +281,8 @@
                             <option value="cashier">Cashier</option>
                           </select>
                         </div>
-                        <button type="submit" class="btn btn-primary">Ajouter</button>
+                        <!-- sweetalert2 -->
+                        <button type="submit" class="btn btn-primary" (click)="onCLickSuppliermodule()">Ajouter</button>
                       </form>
                     </div>
                   </div>
@@ -285,6 +296,7 @@
             <i class="fa-solid fa-eye fa-2x icon-black"></i>
           </div>
         </div>
+
         <div class="col-2"></div>
         <div class="col-2"></div>
       </div>
