@@ -7,7 +7,6 @@ export const routes: Routes = [
   { path:'', component: AppComponent,
     children: [
       {path: '', redirectTo: 'auth', pathMatch: 'full' },
-      {path: 'user', loadChildren: () => import('./user/user.module').then((m) => m.UserModule)},
       {path: 'auth', loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule)},
       {path: 'superadmin', loadChildren: () => import('./superadmin/superadmin.module').then((m) => m.SuperadminModule)},
       {path: 'category', loadChildren: () => import('./category/category.module').then((m) => m.CategoryModule)},
