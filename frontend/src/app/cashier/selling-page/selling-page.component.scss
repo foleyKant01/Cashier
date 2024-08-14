@@ -1,12 +1,27 @@
 .cashier-dashboard {
     display: flex;
     height: auto;
+    flex-direction: row-reverse;
 }
 
 .menu_gauche{
   height: auto;
-  position: absolute;
+  // position: absolute;
+  position: static;
   background-color: #f0f0f0;
+  width: 25%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.add_items {
+  order: 1;
+}
+
+.col-9.border.add_items {
+  flex-grow: 1;
 }
 
 table {
@@ -34,7 +49,8 @@ th {
 
 .column {
   width: 100%;
-  right: 0;
+  // right: 0;
+  left: 0;
   top: 0;
   bottom: 10;
   height: 95vh;
@@ -62,9 +78,9 @@ th {
 .received_input{
   padding: 0px;
   font-size: small;
-  max-width: 100px; /* Ajustez la largeur selon vos besoins */
+  max-width: 100px;
   max-height: 20px;
-  margin-left: 5px; /* Espace entre le texte et l'input */
+  margin-left: 5px;
 }
 
 button {
@@ -117,4 +133,49 @@ input {
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
   border-radius: 4px;
+}
+
+.row.g-3 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.col-auto {
+  display: flex;
+  align-items: stretch;
+
+  margin-bottom: 5px;
+}
+
+.form-control {
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 20px;
+  height: 100%;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  box-sizing: border-box;
+}
+
+.btn {
+  color: white;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  align-items: center;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: #007bff;
+}
+
+.form-control,
+.btn {
+  line-height: 1.5;
 }

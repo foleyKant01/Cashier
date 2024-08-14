@@ -47,8 +47,32 @@
       </div>
     </div>
   </div>
+  
   <div class="col-9 border add_items p-0">
     <div class="col-12 table-responsive p-0">
+      <form class="row g-3 mt-2">
+        <!-- <div class="col-auto">
+          <label for="staticEmail2" class="visually-hidden">Email</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+        </div> -->
+
+        <div class="col-auto"></div>
+        <div class="col-auto"></div>
+        <div class="col-auto"></div>
+        <div class="col-auto"></div>
+
+        <div class="col-auto">
+          <input class="form-control" type="text" id="product-code" placeholder="Scan or enter product code">
+          <!-- <button type="submit" class="btn btn-primary mb-3" onclick="addProduct()">Add Product</button> -->
+        </div>
+         
+        <div class="col-auto produt_add_">
+          <button type="submit" class="btn btn-primary mb-3">Add Product</button>
+        </div>
+
+      </form>
+      
+
       <table style="border: 0px;" class="table table-striped">
         <thead class="thead-dark">
           <tr>
@@ -72,6 +96,7 @@
               <button type="button" class=""><i class="fa-solid fa-trash-can text-danger"></i></button>
             </td>
           </tr>
+          
         </tbody>
       </table>
     </div>
